@@ -1,0 +1,7 @@
+{
+  "name": "AppAtajo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

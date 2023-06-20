@@ -1,0 +1,164 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import '@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+/* estils de estilo de letra*/
+@font-face{
+    font-family: Poppins-Black;
+    src : url('/assets/font/Poppins-Black.otf')
+}
+@font-face{
+    font-family: Poppins-Bold;
+    src : url('/assets/font/Poppins-Bold.otf')
+}
+@font-face{
+    font-family: Poppins-ExtraBold;
+    src : url('/assets/font/Poppins-ExtraBold.otf')
+}
+@font-face{
+    font-family: Poppins-Light;
+    src : url('/assets/font/Poppins-Light.otf')
+}
+@font-face{
+    font-family: Poppins-Medium;
+    src : url('/assets/font/Poppins-Medium.otf')
+}
+@font-face{
+    font-family: Poppins-Regular;
+    src : url('/assets/font/Poppins-Regular.otf')
+}
+@font-face{
+    font-family: Poppins-SemiBold;
+    src : url('/assets/font/Poppins-SemiBold.otf')
+}
+
+.font-black{
+    font-family: Poppins-Black !important;
+}
+.font-bold{
+    font-family: Poppins-Bold !important;
+}
+.font-extraBold{
+    font-family: Poppins-ExtraBold !important;
+}
+.font-light{
+    font-family: Poppins-Light !important;
+}
+.font-medium{
+    font-family: Poppins-Medium !important;
+}
+.font-regular{
+    font-family: Poppins-Regular !important;
+}
+.font-semiBold{
+    font-family: Poppins-SemiBold !important;
+}
+
+.texto-44-size-18{
+    font-size: 1.125rem;
+    color: #444444;
+}
+.texto-44-size-16{
+    font-size: 1rem;
+    color: #444444;
+}
+.texto-44-size-13{
+    font-size: 0.8125rem;
+    color: #444444;
+}
+.texto-17-size-18{
+    font-size: 1.125rem;
+    color: #171717;
+}
+.texto-17-size-20{
+    font-size: 1.25rem;
+    color: #171717;
+}
+.texto-27-size-14{
+    font-size: 0.875rem;
+    color: #2757DF;
+}
+.texto-17-size-14{
+    font-size: 0.875rem;
+    color: #171717;
+}
+.texto-17-size-12{
+    font-size: 0.75rem;
+    color: #171717;
+}
+body{
+    --ion-background-color: #fff !important;
+    background-color: #fff !important;
+}
+app-root{
+    --ion-background-color: #fff !important;
+    background-color: #fff !important;
+}
+ion-content::part(background) {
+    background: #fff;
+}
+/* estilos de las pantallas*/
+.conten-onboarding{
+    --padding-start: 1.5625rem;
+    --padding-end: 1.5625rem;
+    --padding-top: 9.375rem;
+}
+.div-circle-onboard{
+    margin-top: 2.5rem;
+    margin-bottom: 2.875rem;
+    ion-icon{
+        color: #BFBFBF;
+        font-size: 0.75rem;
+        margin-right: 0.3125rem;
+    }
+    .icon-active-onboarding{
+        color: #23ADEB !important;
+    }
+}
+.btn-onboarding{
+    --background: #1B397F;
+    --background-activated: #1B397F; 
+    --color: #fff;
+    --color-activated: #fff;
+    font-size: 1rem;
+    font-family: Poppins-Regular;
+    width: 95%;
+    --border-radius: 1.5625rem;
+    margin: 0 auto;
+    margin-top: 1.75rem;
+}
+.btn-onboarding-omitir{
+    --background: transparent;
+    --background-activated: #transparent; 
+    --color: #444444;
+    --color-activated: #444444;
+    font-size: 0.8125rem;
+    font-family: Poppins-Light;
+    width: 95%;
+    --border-radius: 1.5625rem;
+    margin: 0 auto;
+    margin-top: 2.875rem;
+}
