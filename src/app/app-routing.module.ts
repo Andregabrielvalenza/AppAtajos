@@ -27,6 +27,26 @@ const routes: Routes = [
     path: 'onboarding4',
     loadChildren: () => import('./onboarding4/onboarding4.module').then( m => m.Onboarding4PageModule)
   },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'recuperar-contrasena',
+    loadChildren: () => import('./recuperar-contrasena/recuperar-contrasena.module').then( m => m.RecuperarContrasenaPageModule)
+  },
+  {
+    path: 'registro',
+    loadChildren: () => import('./registro/registro.module').then( m => m.RegistroPageModule)
+  },
+  {
+    path: 'crear-perfil',
+    loadChildren: () => import('./crear-perfil/crear-perfil.module').then( m => m.CrearPerfilPageModule)
+  },
+  {
+    path: 'crear-pefil-uno',
+    loadChildren: () => import('./crear-pefil-uno/crear-pefil-uno.module').then( m => m.CrearPefilUnoPageModule)
+  },
 ];
 
 @NgModule({

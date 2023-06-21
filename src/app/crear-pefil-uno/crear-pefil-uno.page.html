@@ -1,0 +1,41 @@
+<ion-header collapse="fade" mode="ios">
+  <ion-toolbar class="toolbar-general-flecha">
+    <ion-button class="btn-flecha-header ion-no-padding" href="/crear-perfil"><ion-icon name="arrow-back"></ion-icon></ion-button>
+    <ion-title class="ion-text-start font-bold title-17-size-18-header">¡Binevenida Juliana!</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [scrollY]="false">
+  <div class="ion-content-scroll-host div-conten-margin-top-perfil">
+    <ion-card class="card-avatar card-sombra-avatar">
+      <ion-img src="assets/img/avatar.svg" alt="avatar"></ion-img>
+    </ion-card>
+    <p class="ion-text-center texto-44-size-13 ion-margin-top">Un paso más y podras utilizar tu cuenta</p>
+    <ion-item class="item-campos margin-bottom-8 margin-top-24" lines="none">
+      <div class="div-select-dni">
+        <ion-select aria-label="Fruit" interface="popover" placeholder="Doc." mode="ios" class="font-light">
+          <ion-select-option value="oranges">DNI</ion-select-option>
+          <ion-select-option value="pasaporte">Pasaporte</ion-select-option>
+        </ion-select>
+        <ion-icon name="chevron-down-outline" class="icon-select"></ion-icon>
+      </div>
+      <ion-input placeholder="Número de documento" type="number" max="8" class="input-ancho"></ion-input>
+    </ion-item>
+    <ion-item class="item-campos margin-bottom-8" lines="none">
+      <ion-input placeholder="Codigo universitario" type="number" max="9"></ion-input>
+    </ion-item>
+    <ion-item class="item-campos margin-bottom-8" lines="none">
+      <ion-input  placeholder="Centro de estudios" type="text"></ion-input>
+    </ion-item>
+    <ion-item class="item-campos margin-bottom-8" lines="none">
+      <ion-input  placeholder="Numero de celular" type="tel" max="9"></ion-input>
+    </ion-item>
+    <div class="ion-text-center ion-padding-start ion-padding-end div-codigo-verifiacion">
+      <p class="texto-44-size-13 font-light">ingresa el código de verificación enviado por SMS a <b>xxx xxx xxx</b></p>
+      <ion-input placeholder="123456" class="ion-text-center"></ion-input>
+    </div>
+    <ion-button mode="ios" class="btn-onboarding" href="/login">¡Listo!</ion-button>
+    <ion-button mode="ios" class="btn-onboarding-omitir" href="/home">Omitir paso ></ion-button>
+  </div>
+</ion-content>
+

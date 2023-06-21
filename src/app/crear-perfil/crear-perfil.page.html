@@ -1,0 +1,36 @@
+<ion-header collapse="fade" mode="ios">
+  <ion-toolbar class="toolbar-general-flecha">
+    <ion-button class="btn-flecha-header ion-no-padding" href="/login"><ion-icon name="arrow-back"></ion-icon></ion-button>
+    <ion-title class="ion-text-start font-bold title-17-size-18-header">Crea tu perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [scrollY]="false">
+  <div class="ion-content-scroll-host div-conten-margin-top">
+    <ion-card class="card-avatar">
+      <ion-img src="assets/img/avatar.svg" alt="avatar"></ion-img>
+      <ion-button class="ion-no-padding">
+        <ion-img src="assets/img/icon-edit.svg" alt="edit"></ion-img>
+      </ion-button>
+    </ion-card>
+    <ion-item class="item-campos margin-top-30 margin-bottom-8" lines="none">
+      <ion-input placeholder="Nombre" type="text"></ion-input>
+    </ion-item>
+    <ion-item class="item-campos margin-bottom-8" lines="none">
+      <ion-input  placeholder="Apellidos" type="text"></ion-input>
+    </ion-item>
+    <ion-item class="item-campos margin-bottom-8" lines="none">
+      <ion-input  placeholder="Fecha de nacimiento" type="text"></ion-input>
+    </ion-item>
+    <ion-item class="item-campos margin-bottom-8" lines="none">
+      <ion-select aria-label="Fruit" interface="popover" placeholder="Genero" mode="ios" class="font-light">
+        <ion-select-option value="apples">Masculino</ion-select-option>
+        <ion-select-option value="oranges">Femenino</ion-select-option>
+      </ion-select>
+      <ion-icon name="chevron-down-outline" class="icon-select"></ion-icon>
+    </ion-item>
+    <ion-button mode="ios" class="btn-onboarding btn-margin-top-94" href="crear-pefil-uno">Siguiente</ion-button>
+    <ion-button mode="ios" class="btn-onboarding-omitir" href="/home">Omitir paso ></ion-button>
+  </div>
+</ion-content>
+

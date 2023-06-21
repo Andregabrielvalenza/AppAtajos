@@ -1,0 +1,28 @@
+.div-select-dni{
+    width: 35%;
+    position: relative;
+    .icon-select{
+        right: 0rem !important;
+        top: 1.25rem !important;
+    }
+}
+.input-ancho{
+    width: 60%;
+}
+.div-codigo-verifiacion{
+    ion-input{
+        --color: #444444;
+        --background: transparent;
+        --border-color: transparent;
+        --placeholder-opacity: 0.45;
+        --placeholder-color: #444444;
+        font-size: 1.125rem;
+        font-family: Poppins-Medium;
+        border-bottom: 1px solid #707070;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+.div-conten-margin-top-perfil{
+    margin-top: 2.5;
+}
