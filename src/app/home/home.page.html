@@ -1,5 +1,8 @@
 <ion-content class="fondo-verde-oscura">
   <div class="card-header">
+    <ion-button mode="ios" class="btn-menu ion-no-padding" (click)="setOpenmenu(true)">
+      <ion-img src="assets/img/icon-menu.svg"></ion-img>
+    </ion-button>
     <h1 class="ion-text-center font-bold texto-ff-size-18 margin-bottom-0 margin-top-0">Hola, Juliana</h1>
     <p class="ion-text-center font-light texto-ff-size-14 margin-bottom-0 margin-top-0">Tus pasajes disponibles:</p>
     <div class="div-avatar-absolute">
@@ -13,13 +16,13 @@
     <ion-img src="assets/img/icono-bajada.svg" alt="bajada" id="bajda"></ion-img>
     <ion-img src="assets/img/icono-subida.svg" alt="subida" id="subida"></ion-img>
     <div class="div-circle-items div-tiem-1 div-items-wight-paraderos ion-text-center">
-      <p class="font-light p-azul-ruta">Ovalo Garcilaso</p>
+      <p class="font-light p-azul-ruta" href="/qr">Ovalo Garcilaso</p>
       <div class="div-circle-blanco"></div>
     </div>
     <div class="div-circle-items div-tiem-2 div-items-wight-paraderos ">
       <p class="p-anaranjado font-semiBold">Parada más cercana</p>
       <div class="div-circle-blanco div-circle-margin-0"></div>
-      <p class="font-light p-azul-ruta">Mariscal Gamarra</p>
+      <p class="font-light p-azul-ruta" (click)="setOpen(true)">Mariscal Gamarra</p>
     </div>
     <div class="div-circle-items div-tiem-3 div-items-wight-paraderos ">
       <p class="p-anaranjado font-semiBold">Parada más cercana</p>
@@ -88,9 +91,88 @@
       <p class="font-bold texto-ff-size-40 margin-top-0 margin-bottom-0 ion-text-center">09</p>
     </div>
     <div class="ion-text-center">
-      <ion-button mode="ios" class="btn-recargar-home">Recargar saldo</ion-button>
+      <ion-button mode="ios" class="btn-recargar-home" href="/qr">Recargar saldo</ion-button>
     </div>
   </div>
+
+
+
+  <ion-modal [isOpen]="isModalOpen" class="modal-transparente">
+    <ng-template>
+      <ion-content class="ion-padding">
+        <div class="modal-padding-left-right moda-block-home">
+          <div class="div-close ion-no-padding">
+            <ion-button mode="ios" class="btn-close-modal ion-no-padding" (click)="setOpen(false)"><ion-icon name="close-outline"></ion-icon></ion-button>
+          </div>
+          <h4 class="font-light texto-ff-size-14 margin-bottom-0">Paradero</h4>
+          <h4 class="font-bold texto-ff-size-18 margin-top-0">Hospital regional - bajada</h4>
+          <ion-img src="assets/img/paradero.png" alt="paradero" class="paradero-img ion-margin-top"></ion-img>
+          <ion-item class="item-campos item-campos-select-home margin-bottom-8 ion-margin-top" lines="none">
+            <ion-select aria-label="Fruit"  placeholder="Paradero" mode="ios" class="font-light">
+              <ion-select-option value="apples">Masculino</ion-select-option>
+              <ion-select-option value="oranges">Femenino</ion-select-option>
+            </ion-select>
+            <ion-icon name="chevron-down-outline" class="icon-select"></ion-icon>
+          </ion-item>
+          <div class="div-item-dos-modal">
+            <div class="div-block-modal div-border-right-blanco">
+              <h3 class="margin-bottom-0 margin-top-0 texto-ff-size-14 font-light">Próximo</h3>
+              <p class="margin-bottom-0 margin-top-0 texto-ff-size-21 font-semiBold">3 min</p>
+            </div>
+            <div class="div-block-modal">
+              <h3 class="margin-bottom-0 margin-top-0 texto-ff-size-14 font-light">Próximo</h3>
+              <p class="margin-bottom-0 margin-top-0 texto-ff-size-21 font-semiBold">3 min</p>
+            </div>
+          </div>
+          <ion-card class="card-mapa-modal">
+
+          </ion-card>
+          <ion-button mode="ios" class="btn-onboarding btn-anaranjado" href="/onboarding2">Haz tu Check-in aqui</ion-button>
+        </div>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+  <ion-modal [isOpen]="isModalmenu" class="modal-transparente">
+    <ng-template>
+      <ion-content class="ion-no-padding">
+        <ion-card class="card-menu">
+          <ion-button mode="ios" class="btn-close-menu-modal ion-no-padding" (click)="setOpenmenu(false)"><ion-icon name="close"></ion-icon></ion-button>
+          <ion-card class="card-pefil-menu">
+            <ion-img src="assets/img/avatar.svg" class="img-avatar-menu"></ion-img>
+            <h4 class="font-bold texto-17-size-14">Juliana Velasquez Ramirez</h4>
+          </ion-card>
+          <div class="div-items-padding-cero">
+            <ion-card class="card-imtem-menu" href="/qr">
+              <div class="div-flex-items-menu">
+                <ion-img src="assets/img/cargar.svg" class="img-items"></ion-img>
+                <h4 class="font-light texto-17-size-14">Ver mi QR</h4>
+              </div>
+            </ion-card>
+            <ion-card class="card-imtem-menu" href="/cargar-saldo">
+              <div class="div-flex-items-menu">
+                <ion-img src="assets/img/cargar.svg" class="img-items"></ion-img>
+                <h4 class="font-light texto-17-size-14">Cargar saldo</h4>
+              </div>
+            </ion-card>
+            <ion-card class="card-imtem-menu" href="/crear-perfil">
+              <div class="div-flex-items-menu">
+                <ion-img src="assets/img/persona.svg" class="img-items"></ion-img>
+                <h4 class="font-light texto-17-size-14">Editar perfil</h4>
+              </div>
+            </ion-card>
+            <ion-card class="card-imtem-menu border-bottom-cero-menu" href="/antencion-cliente">
+              <div class="div-flex-items-menu">
+                <ion-img src="assets/img/cliente.svg" class="img-items"></ion-img>
+                <h4 class="font-light texto-17-size-14">Atencion al cliente</h4>
+              </div>
+            </ion-card>
+          </div>
+          <ion-button mode="ios" class="btn-cerrar-menu" (click)="setOpenmenu(false)">Cearra sesión</ion-button>
+        </ion-card>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
 
 
 </ion-content>

@@ -1,0 +1,18 @@
+<ion-content [fullscreen]="true" class="conten-login-proceso">
+  <ion-img src="assets/img/imagen-atencion.png" class="img-atencion"></ion-img>
+  <h3 class="ion-text-center texto-17-size-18 font-bold margin-bottom-0 margin-top-0">Atención al cliente</h3>
+  <p class="ion-text-center texto-17-size-14 font-light margin-bottom-0 margin-top-0">¿En que te podemos ayudar?</p>
+  <ion-item class="item-campos margin-bottom-8 ion-margin-top" lines="none">
+    <ion-select aria-label="Fruit" placeholder="Motivo de la comunicación" mode="ios" class="font-light">
+      <ion-select-option value="apples">Masculino</ion-select-option>
+      <ion-select-option value="oranges">Femenino</ion-select-option>
+    </ion-select>
+    <ion-icon name="chevron-down-outline" class="icon-select"></ion-icon>
+  </ion-item>
+  <ion-item class="item-campos margin-bottom-8 ion-margin-top" lines="none">
+    <ion-textarea placeholder="Mensaje"></ion-textarea>
+  </ion-item>
+  <div class="div-footer-rojo div-footer-padding-bottom">
+    <ion-button mode="ios" class="btn-onboarding btn-verde margin-top-0" href="/mensaje-enviado">Enviar</ion-button>
+  </div>
+</ion-content>

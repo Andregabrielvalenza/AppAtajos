@@ -316,3 +316,53 @@
   --padding-end: 1.625rem;
   margin-top: 0.5rem !important;
 }
+.moda-block-home{
+  display: block !important;
+  .paradero-img{
+    border-radius: 10px;
+  }
+  .item-campos-select-home{
+    --background: #FFFFFF !important;
+    --background-activated: #FFFFFF !important;
+    --border-radius: 10px !important;
+    --border-color: #707070 !important;
+  }
+  .div-item-dos-modal{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0px;
+    height: auto !important;
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
+    .div-block-modal{
+      display: block !important;
+      height: auto !important;
+    }
+    .div-border-right-blanco{
+      border-right: 1px solid #fff;
+    }
+  }
+  .card-mapa-modal{
+    margin: 0;
+    width: 100%;
+    border-radius: 14px;
+    background-color: #F29423;
+    height: 17.3125rem;
+  }
+  .div-close{
+    height: auto !important;
+    text-align: right !important;
+    justify-content: end !important;
+    padding-right: 0px !important;
+    .btn-close-modal{
+      --background: transparent;
+      --background-activated: transparent; 
+      --color: #fff;
+      --color-activated: #fff;
+      font-size: 1.875rem;
+      float: right;
+      width: auto;
+      height: auto;
+    }
+  }
+}

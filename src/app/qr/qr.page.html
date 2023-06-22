@@ -1,0 +1,97 @@
+
+
+<ion-content [fullscreen]="true">
+  <ion-card mode="ios" class="card-header-verde">
+    <ion-button mode="ios" class="btn-menu ion-no-padding" (click)="setOpenmenu(true)">
+      <ion-img src="assets/img/icon-menu.svg"></ion-img>
+    </ion-button>
+  </ion-card>
+  <div class="conten-padding-left-right div-top-negativo">
+    <ion-card class="card-qr">
+
+    </ion-card>
+    <p class="ion-text-center font-light texto-17-size-14"><a href="/saldo-bajo">Tu QR personal e intrasferible</a></p>
+    <ion-card class="card-avatar card-sombra-avatar avatar-aobsolute-header ion-margin-top">
+      <ion-img src="assets/img/avatar.svg" alt="avatar"></ion-img>
+    </ion-card>
+    <h4 class="ion-text-center font-bold texto-17-size-20 text-modal">Hola, Juliana <ion-button mode="ios" class="ion-no-padding" (click)="setOpen(true)"><ion-img src="assets/img/icono-datos.svg"></ion-img></ion-button></h4>
+    <p class="ion-text-center texto-27-size-14 font-light">Tus pasajes disponibles:</p>
+    <p class="ion-text-center texto-azul-size-75 font-bold margin-top-40 margin-bottom-40">09</p>
+    <ion-button mode="ios" class="btn-onboarding btn-verde margin-top-0" href="/cargar-saldo">Recargar saldo</ion-button>
+  </div>
+
+  <ion-modal [isOpen]="isModalOpen" class="modal-transparente">
+    <ng-template>
+      <ion-content class="ion-padding">
+        <div class="modal-padding-left-right moda-block-home">
+          <ion-button mode="ios" class="btn-close-modal ion-no-padding" (click)="setOpen(false)"><ion-icon name="close-outline"></ion-icon></ion-button>
+         <ion-card mode="ios" class="card-pefil">
+          <h3 class="margin-top-0 texto-17-size-18 font-bold ion-text-center">Datos de estudiante</h3>
+          <ion-card class="card-avatar card-sombra-avatar card-margin-avatar">
+            <ion-img src="assets/img/avatar.svg" alt="avatar"></ion-img>
+          </ion-card>
+          <h5 class="font-light texto-17-size-14">Juan Jose Gonzales flores</h5>
+          <div class="div-block div-top-perfil">
+            <h6 class="font-semiBold texto-verde-size-14 margin-bottom-0 margin-top-0">DNI / CE</h6>
+            <p class="font-light texto-17-size-14 margin-bottom-0 margin-top-0">43211234</p>
+          </div>
+          <div class="div-block">
+            <h6 class="font-semiBold texto-verde-size-14 margin-bottom-0 margin-top-0">Estudia en</h6>
+            <p class="font-light texto-17-size-14 margin-bottom-0 margin-top-0">Universidad continental, Cusco</p>
+          </div>
+          <div class="div-block">
+            <h6 class="font-semiBold texto-verde-size-14 margin-bottom-0 margin-top-0">Carnet universitario</h6>
+            <p class="font-light texto-17-size-14 margin-bottom-0 margin-top-0">123-456-767</p>
+          </div>
+          <div class="div-block">
+            <h6 class="font-semiBold texto-verde-size-14 margin-bottom-0 margin-top-0">Ultima entrada</h6>
+            <p class="font-light texto-17-size-14 margin-bottom-0 margin-top-0">02/06/2023 - 14:43:56</p>
+          </div>
+         </ion-card>
+        </div>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+  <ion-modal [isOpen]="isModalmenu" class="modal-transparente">
+    <ng-template>
+      <ion-content class="ion-no-padding">
+        <ion-card class="card-menu">
+          <ion-button mode="ios" class="btn-close-menu-modal ion-no-padding" (click)="setOpenmenu(false)"><ion-icon name="close"></ion-icon></ion-button>
+          <ion-card class="card-pefil-menu">
+            <ion-img src="assets/img/avatar.svg" class="img-avatar-menu"></ion-img>
+            <h4 class="font-bold texto-17-size-14">Juliana Velasquez Ramirez</h4>
+          </ion-card>
+          <div class="div-items-padding-cero">
+            <ion-card class="card-imtem-menu" href="/qr">
+              <div class="div-flex-items-menu">
+                <ion-img src="assets/img/cargar.svg" class="img-items"></ion-img>
+                <h4 class="font-light texto-17-size-14">Ver mi QR</h4>
+              </div>
+            </ion-card>
+            <ion-card class="card-imtem-menu" href="/cargar-saldo">
+              <div class="div-flex-items-menu">
+                <ion-img src="assets/img/cargar.svg" class="img-items"></ion-img>
+                <h4 class="font-light texto-17-size-14">Cargar saldo</h4>
+              </div>
+            </ion-card>
+            <ion-card class="card-imtem-menu" href="/crear-perfil">
+              <div class="div-flex-items-menu">
+                <ion-img src="assets/img/persona.svg" class="img-items"></ion-img>
+                <h4 class="font-light texto-17-size-14">Editar perfil</h4>
+              </div>
+            </ion-card>
+            <ion-card class="card-imtem-menu border-bottom-cero-menu" href="/antencion-cliente">
+              <div class="div-flex-items-menu">
+                <ion-img src="assets/img/cliente.svg" class="img-items"></ion-img>
+                <h4 class="font-light texto-17-size-14">Atencion al cliente</h4>
+              </div>
+            </ion-card>
+          </div>
+          <ion-button mode="ios" class="btn-cerrar-menu" (click)="setOpenmenu(false)">Cearra sesión</ion-button>
+        </ion-card>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+  
+</ion-content>

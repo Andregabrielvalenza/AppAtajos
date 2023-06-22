@@ -47,6 +47,30 @@ const routes: Routes = [
     path: 'crear-pefil-uno',
     loadChildren: () => import('./crear-pefil-uno/crear-pefil-uno.module').then( m => m.CrearPefilUnoPageModule)
   },
+  {
+    path: 'qr',
+    loadChildren: () => import('./qr/qr.module').then( m => m.QrPageModule)
+  },
+  {
+    path: 'saldo-bajo',
+    loadChildren: () => import('./saldo-bajo/saldo-bajo.module').then( m => m.SaldoBajoPageModule)
+  },
+  {
+    path: 'cargar-saldo',
+    loadChildren: () => import('./cargar-saldo/cargar-saldo.module').then( m => m.CargarSaldoPageModule)
+  },
+  {
+    path: 'saldo-recargado',
+    loadChildren: () => import('./saldo-recargado/saldo-recargado.module').then( m => m.SaldoRecargadoPageModule)
+  },
+  {
+    path: 'antencion-cliente',
+    loadChildren: () => import('./antencion-cliente/antencion-cliente.module').then( m => m.AntencionClientePageModule)
+  },
+  {
+    path: 'mensaje-enviado',
+    loadChildren: () => import('./mensaje-enviado/mensaje-enviado.module').then( m => m.MensajeEnviadoPageModule)
+  },
 ];
 
 @NgModule({

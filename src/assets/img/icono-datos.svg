@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="Grupo_1662" data-name="Grupo 1662" transform="translate(-267 -525)">
+    <g id="Elipse_104" data-name="Elipse 104" transform="translate(267 525)" fill="#fff" stroke="#707070" stroke-width="1">
+      <circle cx="8" cy="8" r="8" stroke="none"/>
+      <circle cx="8" cy="8" r="7.5" fill="none"/>
+    </g>
+    <g id="Icon_ionic-ios-information-circle-outline" data-name="Icon ionic-ios-information-circle-outline" transform="translate(265.525 523.525)">
+      <path id="Trazado_2027" data-name="Trazado 2027" d="M7.356,5.522a.79.79,0,1,1,.786.767A.768.768,0,0,1,7.356,5.522ZM7.41,6.891H8.875v5.525H7.41Z" transform="translate(1.329 0.74)"/>
+      <path id="Trazado_2028" data-name="Trazado 2028" d="M9.475,2.574A6.9,6.9,0,1,1,4.594,4.594,6.856,6.856,0,0,1,9.475,2.574m0-1.074A7.975,7.975,0,1,0,17.45,9.475,7.974,7.974,0,0,0,9.475,1.5Z" transform="translate(0 0)"/>
+    </g>
+  </g>
+</svg>

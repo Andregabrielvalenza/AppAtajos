@@ -1,0 +1,39 @@
+<ion-header collapse="fade" mode="ios">
+  <ion-toolbar class="toolbar-general-flecha">
+    <ion-button class="btn-flecha-header ion-no-padding" href="/login"><ion-icon name="chevron-back-sharp"></ion-icon></ion-button>
+    <ion-title class="ion-text-start font-light title-17-size-18-header">Regresar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [scrollY]="false">
+  <div class="ion-content-scroll-host">
+    <ion-card class="card-transparent-saldo" mode="ios">
+      <ion-img src="assets/img/imagen-saldo.png" class="img-sin-fondo"></ion-img>
+    </ion-card>
+    <h3 class="ion-text-center texto-17-size-20 font-bold">Recarga saldo</h3>
+    <p class="ion-text-center font-light texto-17-size-14">¿Cuántos pasajes deseas cargar?</p>
+    <div class="div-item-dos-card-cargar">
+      <ion-card class="card-precios card-active">
+        <h4 class="ion-text-center margin-bottom-0 margin-top-0 font-bold texto-ff-size-14">5 Pasajes</h4>
+        <p class="ion-text-center margin-bottom-0 texto-ff-size-14 font-light">S/. 7.50</p>
+      </ion-card>
+      <ion-card class="card-precios">
+        <h4 class="ion-text-center margin-bottom-0 margin-top-0 font-bold texto-ff-size-14">5 Pasajes</h4>
+        <p class="ion-text-center margin-bottom-0 texto-ff-size-14 font-light">S/. 7.50</p>
+      </ion-card>
+      <ion-card class="card-precios">
+        <h4 class="ion-text-center margin-bottom-0 margin-top-0 font-bold texto-ff-size-14">5 Pasajes</h4>
+        <p class="ion-text-center margin-bottom-0 texto-ff-size-14 font-light">S/. 7.50</p>
+      </ion-card>
+      <ion-card class="card-precios">
+        <h4 class="ion-text-center margin-bottom-0 margin-top-0 font-bold texto-ff-size-14">5 Pasajes</h4>
+        <p class="ion-text-center margin-bottom-0 texto-ff-size-14 font-light">S/. 7.50</p>
+      </ion-card>
+    </div>
+    <div class="margin-top-30 ion-text-center">
+      <h4 class="ion-text-center texto-17-size-14 font-bold">35 Pasajes</h4>
+      <ion-button mode="ios" class="btn-onboarding btn-radius" href="/saldo-recargado">S/52.50 Proceder</ion-button>
+    </div>
+  </div>
+</ion-content>
+

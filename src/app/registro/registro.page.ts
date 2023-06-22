@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegistroPage implements OnInit {
 
+  isModalOpen = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+
+  setOpen(isOpen: boolean) {
+    this.isModalOpen = isOpen;
   }
 
 }

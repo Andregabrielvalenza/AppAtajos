@@ -104,6 +104,10 @@
 .texto-17-size-14{
     font-size: 0.875rem;
     color: #171717;
+    a{
+        color: #171717 !important;
+        text-decoration: none;
+    }
 }
 .texto-17-size-12{
     font-size: 0.75rem;
@@ -121,11 +125,29 @@
     color: #fff;
     font-size: 2.5rem;
 }
+.texto-ff-size-21{
+    color: #fff;
+    font-size: 1.3125rem;
+}
+.texto-azul-size-75{
+    color: #1B397F;
+    font-size: 4.6875rem;
+}
+.texto-verde-size-14{
+    color: #3AC19D;
+    font-size: 0.875rem;
+}
 .margin-bottom-0{
     margin-bottom: 0px;
 }
 .margin-top-0{
-    margin-top: 0px;
+    margin-top: 0px !important;
+}
+.margin-top-40{
+    margin-top: 2.5rem;
+} 
+.margin-bottom-40{
+    margin-bottom: 2.5rem;
 }
 .sc-ion-input-md-h:not(.legacy-input){
     height: auto !important;
@@ -166,6 +188,11 @@ ion-content::part(background) {
     --padding-end: 1.5625rem;
     --padding-top: 5.625rem;
 }
+.conten-padding-left-right{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-bottom: 3.125rem;
+}
 .div-circle-onboard{
     margin-top: 2.5rem;
     margin-bottom: 2.875rem;
@@ -190,6 +217,25 @@ ion-content::part(background) {
     margin: 0 auto;
     margin-top: 1.75rem;
     height: 3.4375rem;
+}
+.btn-anaranjado{
+    --background: #F29423 !important;
+    --background-activated: #F29423 !important;
+    margin-bottom: 3.375rem !important;
+}
+.btn-verde{
+    --background: #3AC19D !important;
+    --background-activated: #3AC19D !important;
+    font-family: Poppins-Bold !important;
+}
+.btn-rojo{
+    --background: #FD1111 !important;
+    --background-activated: #FD1111 !important;
+    font-family: Poppins-Bold !important;
+}
+.btn-radius{
+    font-family: Poppins-Bold !important;
+    --border-radius: 13px;
 }
 .btn-onboarding-omitir{
     --background: transparent;
@@ -226,6 +272,16 @@ ion-content::part(background) {
         font-family: Poppins-Light;
         margin-left: 1.25rem;
         height: 3.5rem;
+    }
+    ion-textarea{
+        --background:  transparent;
+        --color: #444444;
+        --placeholder-color: #444444;
+        --placeholder-opacity: 1; 
+        font-size: 0.8125rem;
+        font-family: Poppins-Light;
+        margin-left: 1.25rem;
+        height: 12.5rem;
     }
     ion-select{
         width: 100% !important;
@@ -526,4 +582,186 @@ ion-checkbox::part(container) {
 }
 .margin-top-24{
     margin-top: 1.5rem;
+}
+.card-header-verde{
+    width: 100%;
+    margin: 0;
+    background-color: #3AC19D;
+    height: 16.5rem;
+    border-radius: 0px;
+}
+.card-qr{
+    width: 17.1875rem;
+    border-radius: 13px;
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 1.5rem;
+    background-color: #fff;
+    height: 17.1875rem;
+    margin: 0 auto;
+}
+.div-top-negativo{
+    margin-top: -10.25rem;
+    text-align: center;
+}
+.btn-close-modal{
+    --background: transparent;
+    --background-activated: transparent; 
+    --color: #fff;
+    --color-activated: #fff;
+    font-size: 1.875rem;
+    float: right;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 3.125rem;
+    right: 1.875rem;
+}
+.card-pefil{
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    padding-left: 2.375rem;
+    padding-right: 2.375rem;
+    padding-top: 4.25rem;
+    padding-bottom: 3.375rem;
+    margin: 0px;
+    background-image: url('/assets/img/imagen-fondo-perfil.png');
+    background-position: top center;
+    background-size: 83%;
+    background-repeat: no-repeat;
+    .card-margin-avatar{
+        margin: 0px !important;
+        margin-top: 1.375rem !important;
+    }
+    .div-block{
+        display: block !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        margin-bottom: 0.875rem !important;
+    }
+    .div-top-perfil{
+        margin-top: 1rem;
+    }
+}
+.text-rojo{
+    color: #FD1111 !important;
+}
+.div-footer-rojo{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 9999;
+    text-align: center;
+    padding-bottom: 1.4375rem;
+    padding-top: 1.4375rem;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+}
+.margin-bottom-footer-p{
+    margin-bottom: 3.75rem;
+}
+.margin-top-30{
+    margin-top: 1.875rem;
+}
+.div-footer-padding-bottom{
+    padding-bottom: 3.125rem !important;
+}
+.conten-recgardaro{
+    --padding-start: 3.125rem;
+    --padding-end: 3.125rem;
+}
+.img-recargable{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 60% !important;
+}
+.btn-menu{
+    --background: transparent;
+    --background-activated: transparent;
+    position: absolute;
+    top: 1rem;
+    right: 1.25rem;
+    height: auto;
+}
+.card-menu{
+    background-color: #fff;
+    width: 100%;
+    margin: 0px;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 4.125rem;
+    padding-bottom: 2.5rem;
+    border-radius: 0px 0px 20px 20px;
+    position: relative;
+    .card-pefil-menu{
+        display: flex;
+        margin: 0px;
+        border-radius: 0px;
+        box-shadow: none;
+        background-color: transparent;
+        align-items: center;
+        .img-avatar-menu{
+            width: 3.25rem;
+            height: 3.25rem;
+            border-radius: 50%;
+            margin-right: 0.5rem;
+        }
+    }
+    .div-items-padding-cero{
+        padding: 0px !important;
+        margin-top: 1.875rem;
+        display: block !important;
+        .card-imtem-menu{
+            margin: 0px;
+            border-radius: 0px;
+            box-shadow: none;
+            background-color: transparent;
+            width: 100%;
+            align-items: center;
+            border-bottom: 1px solid #4EE8C4;
+            padding-top: 1.125rem;
+            padding-bottom: 1.125rem;
+            width: 100%;
+            .div-flex-items-menu{
+                display: flex;
+                padding: 0px !important;
+                justify-content: start;
+                .img-items{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    margin-right: 0.75rem;
+                }
+            }
+        }
+        .border-bottom-cero-menu{
+            border-bottom: 0px !important;
+        }
+    }
+    .btn-cerrar-menu{
+        --background: transparent;
+        --background-activated: transparent;
+        --color: #171717;
+        --color-activated: #171717;
+        font-size: 0.875rem;
+        font-family: Poppins-Light;
+        margin-top: 1.5rem;
+    }
+    .btn-close-menu-modal{
+        --background: transparent;
+        --background-activated: transparent;
+        --color: #171717;
+        --color-activated: #171717;
+        width: auto;
+        height: auto;
+        position: absolute;
+        right: 1.75rem;
+        top: 1.75rem;
+        ion-icon{
+            font-size: 2.1875rem;
+        }
+    }
 }

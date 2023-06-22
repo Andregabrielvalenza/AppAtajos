@@ -15,9 +15,43 @@
     <ion-input  placeholder="Repite tu contraseña" type="password"></ion-input>
     <ion-icon name="eye-off-outline"></ion-icon>
   </ion-item>
-  <ion-checkbox labelPlacement="end" mode="ios" class="font-light texto-17-size-12 margin-top-30">Acepto los <a>términos y condiciones</a></ion-checkbox>
+  <ion-checkbox labelPlacement="end" mode="ios" class="font-light texto-17-size-12 margin-top-30">Acepto los <a (click)="setOpen(false)">términos y condiciones</a></ion-checkbox>
   <ion-button mode="ios" class="btn-onboarding" href="/crear-perfil">¡Empecemos!</ion-button>
   <p class="font-regular texto-44-size-13 ion-text-center margin-top-30">
     ¿Ya tienes cuenta? <a href="/login" class="link-bold-decoration-none">Ingresa</a>
   </p>
+
+  <ion-modal [isOpen]="isModalOpen" class="modal-transparente">
+    <ng-template>
+      <ion-content class="ion-padding">
+        <div class="modal-padding-left-right moda-block-home">
+          <ion-button mode="ios" class="btn-close-modal ion-no-padding" (click)="setOpen(false)"><ion-icon name="close-outline"></ion-icon></ion-button>
+         <ion-card mode="ios" class="card-pefil">
+          <h3 class="margin-top-0 texto-17-size-18 font-bold ion-text-center">Datos de estudiante</h3>
+          <ion-card class="card-avatar card-sombra-avatar card-margin-avatar">
+            <ion-img src="assets/img/avatar.svg" alt="avatar"></ion-img>
+          </ion-card>
+          <h5 class="font-light texto-17-size-14">Juan Jose Gonzales flores</h5>
+          <div class="div-block div-top-perfil">
+            <h6 class="font-semiBold texto-verde-size-14 margin-bottom-0 margin-top-0">DNI / CE</h6>
+            <p class="font-light texto-17-size-14 margin-bottom-0 margin-top-0">43211234</p>
+          </div>
+          <div class="div-block">
+            <h6 class="font-semiBold texto-verde-size-14 margin-bottom-0 margin-top-0">Estudia en</h6>
+            <p class="font-light texto-17-size-14 margin-bottom-0 margin-top-0">Universidad continental, Cusco</p>
+          </div>
+          <div class="div-block">
+            <h6 class="font-semiBold texto-verde-size-14 margin-bottom-0 margin-top-0">Carnet universitario</h6>
+            <p class="font-light texto-17-size-14 margin-bottom-0 margin-top-0">123-456-767</p>
+          </div>
+          <div class="div-block">
+            <h6 class="font-semiBold texto-verde-size-14 margin-bottom-0 margin-top-0">Ultima entrada</h6>
+            <p class="font-light texto-17-size-14 margin-bottom-0 margin-top-0">02/06/2023 - 14:43:56</p>
+          </div>
+         </ion-card>
+        </div>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
 </ion-content>
